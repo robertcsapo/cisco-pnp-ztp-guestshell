@@ -6,8 +6,8 @@ Workflow based
 from __future__ import print_function
 import time
 import sys
-import os
 import ztpcli
+
 
 def ztp(device):
     """ Output to a file """

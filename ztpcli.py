@@ -4,6 +4,7 @@ Configures devices through SSH from Python Service
 
 from netmiko import ConnectHandler
 
+
 def postScript(device):
     """ Post Script after ZTP"""
     ztp_device = {
@@ -16,11 +17,11 @@ def postScript(device):
         }
     print("ssh device: %s" % device)
     net_connect = ConnectHandler(**ztp_device)
-    config_commands = [    "!",
-                            "int vlan1",
-                            "desc postScript"
-                            "!",
-                        ]
+    config_commands = ["!",
+                       "int vlan1",
+                       "desc postScript"
+                       "!",
+                       ]
     output = net_connect.send_config_set(config_commands)
     print(output)
     output = net_connect.disconnect()

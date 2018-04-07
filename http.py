@@ -8,12 +8,14 @@ import provision
 unique_device = {}
 app = Flask(__name__)
 """ Settings """
-PORT="8000"
-HOST="0.0.0.0"
+PORT = "8000"
+HOST = "0.0.0.0"
+
 
 @app.route("/")
 def hello():
     return "Cisco Custom ZTP provisioning - Made by rcsapo@cisco.com"
+
 
 @app.route('/ztp.py', methods=["GET"])
 def ztp_file():
