@@ -1,7 +1,7 @@
 """
 HTTP Service to download Python script
 """
-from flask import Flask, request, send_from_directory, render_template
+from flask import Flask, request
 from threading import Thread
 import provision
 
@@ -30,4 +30,4 @@ def ztp_file():
     return app.send_static_file('ztp.py')
 
 if __name__ == "__main__":
-    app.run(host=HOST,port=PORT)
+    app.run(host=HOST, port=PORT)

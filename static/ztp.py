@@ -3,7 +3,6 @@ Cisco ZTP script through GuestShell
 """
 import cli
 import re
-import sys
 
 hostname = cli.execute('show version | i Processor board ID')
 print(hostname)

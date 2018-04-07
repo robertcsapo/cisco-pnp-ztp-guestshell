@@ -3,8 +3,6 @@ Configures devices through SSH from Python Service
 """
 
 from netmiko import ConnectHandler
-import re
-import spark
 
 def postScript(device):
     """ Post Script after ZTP"""
@@ -13,7 +11,7 @@ def postScript(device):
         'ip':   device,
         'username': 'user',
         'password': 'password',
-        'port' : 22,
+        'port': 22,
         'verbose': False,
         }
     print("ssh device: %s" % device)

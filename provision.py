@@ -5,18 +5,9 @@ Workflow based
 
 from __future__ import print_function
 import time
-import re
 import sys
 import os
-
-import lxml.etree as ET
-from argparse import ArgumentParser
-from ncclient import manager
-from ncclient.operations import RPCError
-import xmltodict
-import json
 import ztpcli
-import spark
 
 def ztp(device):
     """ Output to a file """

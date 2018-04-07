@@ -1,0 +1,4 @@
+setuptools
+Flask
+request
+netmiko
