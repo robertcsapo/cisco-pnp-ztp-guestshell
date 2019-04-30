@@ -19,7 +19,7 @@ def postScript(device):
     net_connect = ConnectHandler(**ztp_device)
     config_commands = ["!",
                        "int vlan1",
-                       "desc postScript"
+                       "desc postScript",
                        "!",
                        ]
     output = net_connect.send_config_set(config_commands)
