@@ -9,7 +9,7 @@ import provision
 unique_device = {}
 app = Flask(__name__)
 """ Settings """
-PORT = "8000"
+PORT = 8000
 HOST = "0.0.0.0"
 
 __app__ = "cisco-pnp-ztp-guestshell"
