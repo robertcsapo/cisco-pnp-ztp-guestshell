@@ -1,4 +1,4 @@
 setuptools
 Flask
-request
+requests
 netmiko
